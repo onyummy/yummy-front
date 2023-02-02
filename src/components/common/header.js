@@ -9,6 +9,9 @@ export default function Header({ children, home }) {
                 <Link href="/recipe/list">
                     <span>레시피 리스트</span>
                 </Link>
+                <Link href="/member/login">
+                    <span>로그인</span>
+                </Link>
             </div>
         </>
     );
