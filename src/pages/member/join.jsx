@@ -6,10 +6,9 @@ import Head from "next/head";
 import MemberInput from "./components/MemberInput";
 import MemberBtn from "./components/MemberBtn";
 import MemberLine from "./components/MemberLine";
-import KakaoBtn from "./components/KakaoBtn";
 import NaverBtn from "./components/NaverBtn";
 
-export default function login() {
+export default function join() {
     const router = useRouter();
 
     if (router.isFallback) {
@@ -18,13 +17,14 @@ export default function login() {
 
     return (
         <Layout>
-            <KakaoBtn />
-            <NaverBtn />
             <MemberLine text='또는'/>
+            <NaverBtn />
             <form>
                 <MemberInput placeholder='이메일' name='eMail' /><br />
+                <MemberInput placeholder='성명' name='name' /><br />
+                <MemberInput placeholder='전화번호' name='phone' /><br />
                 <MemberInput placeholder='비밀번호' name='passWord' /><br />
-                <MemberBtn name='로그인' /><br />
+                <MemberBtn name='가입' />
             </form>
         </Layout>
     );
