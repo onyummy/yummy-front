@@ -1,0 +1,30 @@
+.btn_member {
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 0%;
+}
+
+.input_member {
+    margin: 5px 0;
+    border-radius: 0%;
+}
+
+.btn_kakao {
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 15px;
+    background-color: #FEE500;
+    color: #000;
+}
+.btn_naver {
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 15px;
+    background-color: #03C75A;
+    color: #fff;
+}
+
+.img_naver {
+    height: 22px;
+    width: 22px;
+}

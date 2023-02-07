@@ -7,6 +7,7 @@ import MemberInput from "../../components/member/MemberInput";
 import MemberBtn from "../../components/member/MemberBtn";
 import MemberLine from "../../components/member/MemberLine";
 import NaverBtn from "../../components/member/NaverBtn";
+import KakaoBtn from "../../components/member/KakaoBtn";
 
 export default function join() {
     const router = useRouter();
@@ -17,8 +18,9 @@ export default function join() {
 
     return (
         <Layout>
+            <KakaoBtn text='카카오 로그인'/>
+            <NaverBtn text='네이버로 시작하기'/>
             <MemberLine text='또는'/>
-            <NaverBtn />
             <form>
                 <MemberInput placeholder='이메일' name='eMail' /><br />
                 <MemberInput placeholder='성명' name='name' /><br />

@@ -18,8 +18,8 @@ export default function login() {
 
     return (
         <Layout>
-            <KakaoBtn />
-            <NaverBtn />
+            <KakaoBtn text='카카오 로그인'/>
+            <NaverBtn text='네이버 로그인'/>
             <MemberLine text='또는'/>
             <form>
                 <MemberInput placeholder='이메일' name='eMail' /><br />
