@@ -1,7 +1,8 @@
+import { Button } from "antd"
 export default function MemberBtn(props) {
     return (
         <>
-            <button>{props.name}</button>
+            <Button type="primary">{props.name}</Button>
         </>  
     )
 }
