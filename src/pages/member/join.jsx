@@ -3,10 +3,10 @@ import React, { useEffect, useState } from "react";
 import Layout from "../../components/common/layout";
 import utilStyles from "../../assets/utils.module.css";
 import Head from "next/head";
-import MemberInput from "./components/MemberInput";
-import MemberBtn from "./components/MemberBtn";
-import MemberLine from "./components/MemberLine";
-import NaverBtn from "./components/NaverBtn";
+import MemberInput from "../../components/member/MemberInput";
+import MemberBtn from "../../components/member/MemberBtn";
+import MemberLine from "../../components/member/MemberLine";
+import NaverBtn from "../../components/member/NaverBtn";
 
 export default function join() {
     const router = useRouter();
