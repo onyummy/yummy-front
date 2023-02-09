@@ -24,7 +24,35 @@
     color: #fff;
 }
 
-.img_naver {
+.img_member_btn{
     height: 22px;
     width: 22px;
+    float: left;
+}
+
+.img_line{
+    width: 45%;
+    height: 22px;
+    float: left;
+}
+
+.line_text {
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    height: 22px;
+    line-height: 22px;
+    float: left;
+    font-size: 14px;
+}
+
+.base_txt_box {
+    text-align: center;
+    font-size: 14px;
+}
+
+.blue_link_txt {
+    text-decoration: none;
+    color: #1677ff;
+    font-size: 14px;
 }

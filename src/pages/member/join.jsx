@@ -8,6 +8,7 @@ import MemberBtn from "../../components/member/MemberBtn";
 import MemberLine from "../../components/member/MemberLine";
 import NaverBtn from "../../components/member/NaverBtn";
 import KakaoBtn from "../../components/member/KakaoBtn";
+import styles from "../../components/member/member.module.css";
 
 export default function join() {
     const router = useRouter();
@@ -26,8 +27,9 @@ export default function join() {
                 <MemberInput placeholder='성명' name='name' /><br />
                 <MemberInput placeholder='전화번호' name='phone' /><br />
                 <MemberInput placeholder='비밀번호' name='passWord' /><br />
-                <MemberBtn name='가입' />
+                <MemberBtn name='가입' type='submit'/>
             </form>
+            <p className={styles.base_txt_box}>가입하면 OOO의 약관 데이터 정책 및 쿠키 정책에 동의하게 됩니다.</p>
         </Layout>
     );
 }
