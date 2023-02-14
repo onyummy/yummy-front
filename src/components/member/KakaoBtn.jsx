@@ -6,7 +6,7 @@ export default function KakaoBtn(props) {
     // 아이콘 텍스트 분리 후 커스텀 필요
     return (
         <Button type="text" className={styles.btn_kakao}>
-            <Image src={kakaoImg} className={styles.img_member_btn}/>
+            <Image src={kakaoImg} alt={props.text} className={styles.img_member_btn}/>
             {props.text}
         </Button>
     )
