@@ -4,6 +4,7 @@ import Layout from "../../components/common/layout";
 import { UserOutlined } from '@ant-design/icons';
 import { Avatar, Space } from 'antd';
 import MyIngredient from "../../components/mypage/MyIngredient";
+import { Row } from "antd";
 
 export default function mypage() {
     const router = useRouter();
@@ -23,7 +24,6 @@ export default function mypage() {
         getIngredienrList();
        
     })
-    console.log(ingredienrList);
     const ingredienr = ingredienrList.map((ingredienr, index) => (
         <MyIngredient key={ingredienr.name} {...ingredienr} />
     ));
@@ -31,9 +31,9 @@ export default function mypage() {
     return (
         <Layout>
            <Avatar size={64} icon={<UserOutlined />} />
-           <div>
-            {ingredienr}
-           </div>
+           <Row gutter={32}>
+                {ingredienr}
+           </Row>
         </Layout>
     );
 }
