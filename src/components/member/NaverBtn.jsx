@@ -6,7 +6,7 @@ export default function NaverBtn(props) {
     // 아이콘 텍스트 분리 후 커스텀 필요
     return (
         <Button type="text" className={styles.btn_naver}>
-            <Image src={naverImg} className={styles.img_member_btn}/>
+            <Image src={naverImg} alt={props.text} className={styles.img_member_btn}/>
             {props.text}
         </Button>
     )
