@@ -7,30 +7,32 @@ import MyIngredient from "../../components/mypage/MyIngredient";
 
 export default function mypage() {
     const router = useRouter();
-    const [ingredienrList, setIngredienrList] = useState([]);
-    // useState(() => {
-    //     const getIngredienrList = async () => {
-    //         const res = await fetch("/api/mypage/ingredient");
-    //         const data = await res.json();
-
-    //         setIngredienrList(data);
-    //     };
-
-    //     getIngredienrList();
-    //     console.log(ingredienrList);
-    // })
-
     if (router.isFallback) {
         return <div>Loading...</div>;
     }
+
+    const [ingredienrList, setIngredienrList] = useState([]);
+    useState(() => {
+        const getIngredienrList = async () => {
+            const res = await fetch("/api/mypage/ingredient");
+            const data = await res.json();
+
+            setIngredienrList(data);
+        };
+
+        getIngredienrList();
+       
+    })
+    console.log(ingredienrList);
     const ingredienr = ingredienrList.map((ingredienr, index) => (
         <MyIngredient key={ingredienr.name} {...ingredienr} />
     ));
+    
     return (
         <Layout>
            <Avatar size={64} icon={<UserOutlined />} />
            <div>
-            {/* {ingredienr} */}
+            {ingredienr}
            </div>
         </Layout>
     );
