@@ -1,0 +1,21 @@
+.header {
+    position: sticky;
+    top:0px;
+    left:0px;
+    right:0;
+    z-index: 10;
+    height: 70px;
+    border-bottom: 2px solid #ddd;
+    line-height: 70px;
+}
+.headerImg {
+    position: relative;
+}
+.headerLink {
+    position: absolute;
+    height: 70px;
+}
+.headerTitle {
+    margin: 0;
+    text-align: center;
+}
