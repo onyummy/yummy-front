@@ -1,5 +1,4 @@
 import {Layout, Table} from 'antd';
-import qs from 'qs';
 import { useEffect, useState } from 'react';
 import CustomLayout from "../../components/common/layout";
 import Head from "next/head";
