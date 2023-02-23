@@ -10,7 +10,7 @@ import NaverBtn from "../../components/member/NaverBtn";
 import KakaoBtn from "../../components/member/KakaoBtn";
 import styles from "../../components/member/member.module.css";
 
-export default function join() {
+export default function Join() {
     const router = useRouter();
 
     if (router.isFallback) {
