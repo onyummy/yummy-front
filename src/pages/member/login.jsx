@@ -9,7 +9,7 @@ import NaverBtn from "../../components/member/NaverBtn";
 import Link from "next/link";
 import styles from "../../components/member/member.module.css";
 
-export default function login() {
+export default function Login() {
     const router = useRouter();
 
     if (router.isFallback) {
