@@ -1,9 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "./layout.module.css";
-import utilStyles from "../../assets/utils.module.css";
-import Link from "next/link";
-import Header from "./header";
+import Header from "./Header";
 import Footer from "./footer";
 
 const name = "[Your Name]";
@@ -27,7 +24,7 @@ export default function Layout({ children, home }) {
                 <meta name="og:title" content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
-            <Header />
+            <Header title="메인" />
             <div className={styles.container}>
                 <main>{children}</main>
             </div>
