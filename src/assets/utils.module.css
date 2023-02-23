@@ -54,3 +54,41 @@
 .recipeItem {
     border: 1px solid #000000;
 }
+
+.mealPlannerItem {
+    border: 1px solid #000000;
+}
+
+.mealPlannerName {
+    font-size: 1rem;
+    line-height: 1.3;
+    font-weight: 800;
+    letter-spacing: -0.05rem;
+    margin: 1rem 0;
+}
+
+.mealPlannerDesc {
+}
+
+.plannerWrapper {
+    border: 1px solid #000000;
+}
+
+.plannerWrapperTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.3;
+    letter-spacing: -0.05rem;
+    margin: 1rem 0;
+}
+
+.mealRow {
+    flex-flow: row;
+    overflow: scroll;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 20px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
